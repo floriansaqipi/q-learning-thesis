@@ -1,0 +1,7 @@
+PROGRESS_MEMORY_FILE_NAME = "q_values.npz"
+PROGRESS_MEMORY_DIRECTORY = "progress_memory"
+PLAYER_VIDEOS_DIRECTORY = "./player_videos"
+PLAYER_NAME_PREFIX = "player"
+TRAINING_VIDEOS_DIRECTORY = "training_videos"
+TRAINING_NAME_PREFIX = "training"
+ENVIRONMENT_ID_TAXI_V3 = "Taxi-v3"
