@@ -1,6 +1,6 @@
 
 from .agent import QLearningAgent
-from .environment import BasicEnvironment, StatisticsRecordingEnvironment, VideoRecordingEnvironment
+from .environment import Environment, StatisticsRecordingEnvironment, VideoRecordingEnvironment
 from .player import TrainingPlayer, InferencePlayer
 from .result_visualiser import GraphVisualiser
 from .constants import *

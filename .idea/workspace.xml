@@ -4,60 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2117307c-a555-48c0-8362-23c29dbf44f9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/q-learning-thesis.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/player_videos/player-episode-0.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/player_videos/player-episode-1.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/player_videos/player-episode-100000.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/player_videos/player-episode-2.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/player_videos/player-episode-200000.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/player_videos/player-episode-3.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/player_videos/player-episode-300000.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/player_videos/player-episode-4.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/player_videos/player-episode-400000.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/player_videos/player-episode-5.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/player_videos/player-episode-500000.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/player_videos/player-episode-6.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/player_videos/player-episode-600000.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/player_videos/player-episode-7.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/player_videos/player-episode-700000.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/player_videos/player-episode-8.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/player_videos/player-episode-800000.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/player_videos/player-episode-9.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/player_videos/player-episode-900000.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/agent.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/policy/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/policy/epsilon_greedy_policy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/q_learning_agent.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/constants.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/environment/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/environment/basic_environment.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/environment/envrionment.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/environment/envrionment_decorator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/environment/episode_queue_provider.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/environment/statistics_recording_environment.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/environment/video_recording_environment.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/parameters.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/player/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/player/experience_handler.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/player/inference_q_learning_player.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/player/player.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/player/q_learning_player.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/player/training_q_learning_player.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/render_modes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/result_visualiser/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/result_visualiser/graph_visualiser.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/result_visualiser/visualiser.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/utils/path_utils.py" afterDir="false" />
+    <list default="true" id="2117307c-a555-48c0-8362-23c29dbf44f9" name="Changes" comment="implemented basic q learning agent and general project architecture">
+      <change afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/environment/environment_wrapper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/player_videos/player-episode-0.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/player_videos/player-episode-0.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/player_videos/player-episode-1.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/player_videos/player-episode-1.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/player_videos/player-episode-100000.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/player_videos/player-episode-2.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/player_videos/player-episode-2.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/player_videos/player-episode-200000.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/player_videos/player-episode-3.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/player_videos/player-episode-3.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/player_videos/player-episode-300000.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/player_videos/player-episode-4.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/player_videos/player-episode-4.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/player_videos/player-episode-400000.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/player_videos/player-episode-5.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/player_videos/player-episode-5.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/player_videos/player-episode-500000.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/player_videos/player-episode-6.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/player_videos/player-episode-6.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/player_videos/player-episode-600000.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/player_videos/player-episode-7.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/player_videos/player-episode-7.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/player_videos/player-episode-700000.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/player_videos/player-episode-8.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/player_videos/player-episode-8.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/player_videos/player-episode-800000.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/player_videos/player-episode-9.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/player_videos/player-episode-9.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/player_videos/player-episode-900000.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/environment/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/environment/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/environment/basic_environment.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/environment/envrionment.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/environment/envrionment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/environment/envrionment_decorator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/environment/statistics_recording_environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/environment/statistics_recording_environment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/environment/video_recording_environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/environment/video_recording_environment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/parameters.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/parameters.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -253,6 +230,13 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>16</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -261,5 +245,10 @@
         </breakpoint>
       </default-breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="self.env" language="Python" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

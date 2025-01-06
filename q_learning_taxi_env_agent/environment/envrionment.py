@@ -1,38 +1,32 @@
-import gymnasium as gym
+from abc import ABC
 
-from abc import ABC, abstractmethod
+import gymnasium as gym
 
 from ..render_modes import RenderMode
 
 
-class Environment(ABC):
+class Environment:
 
-    def __init__(self, env_id: str, render_mode : RenderMode = RenderMode.NONE, seed : int = None):
+    def __init__(self, env_id: str, render_mode: RenderMode = RenderMode.NONE, seed: int = None):
         self.env_id = env_id
         self.render_mode = render_mode
         self.seed = seed
         self.inner_env = gym.make(env_id, render_mode=render_mode.value)
 
-    @abstractmethod
     def step(self, action):
-        pass
+        return self.inner_env.step(action)
 
-    @abstractmethod
     def reset(self, seed: int = None):
-        pass
+        return self.inner_env.reset(seed=seed)
 
-    @abstractmethod
     def get_action_space(self):
-        pass
+        return self.inner_env.action_space
 
-    @abstractmethod
     def random_step(self):
-        pass
+        return self.inner_env.action_space.sample()
 
-    @abstractmethod
     def get_observation_space(self):
-        pass
+        return self.inner_env.observation_space
 
-    @abstractmethod
     def close(self):
-        pass
+        return self.inner_env.close()
