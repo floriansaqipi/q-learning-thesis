@@ -4,9 +4,9 @@ from abc import ABC, abstractmethod
 class ExperienceHandler(ABC):
 
     @abstractmethod
-    def load_progress(self):
+    def load_progress(self, file_name):
         pass
 
     @abstractmethod
-    def save_progress(self):
+    def save_progress(self, file_name):
         pass

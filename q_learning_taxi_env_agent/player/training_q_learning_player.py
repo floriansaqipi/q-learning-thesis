@@ -1,3 +1,5 @@
+from sys import flags
+
 from tqdm import tqdm
 
 from .q_learning_player import QLearningPlayer
@@ -6,11 +8,13 @@ from ..environment import Environment
 
 
 class TrainingPlayer(QLearningPlayer):
-    def __init__(self,env: Environment, n_episodes, agent: QLearningAgent):
-        super().__init__(env, n_episodes, agent)
+    def __init__(self,env: Environment, agent: QLearningAgent, n_episodes : int = None):
+        super().__init__(env, agent, n_episodes)
 
     def play(self):
-        for episode in tqdm(range(self.n_episodes)):
+        episode_count = 0
+
+        while self.n_episodes is None or episode_count < self.n_episodes:
             obs, info = self.env.reset(self.env.seed)
             done = False
 
@@ -22,6 +26,8 @@ class TrainingPlayer(QLearningPlayer):
                 done = terminated or truncated
 
             self.agent.decay_epsilon()
+            episode_count += 1
+            self.progress_bar.update(1)
 
         self.env.close()
 
