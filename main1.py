@@ -5,7 +5,7 @@ from q_learning_taxi_env_agent import Environment, VideoRecordingEnvironment, QL
 
 from q_learning_taxi_env_agent.constants import ENVIRONMENT_ID_TAXI_V3, PROGRESS_MEMORY_FILE_NAME, \
      INFERENCE_PLAYER_VIDEOS_DIRECTORY_NAME
-from q_learning_taxi_env_agent.parameters import N_TRAINING_EPISODES, N_PLAYING_EPISODES, SEED, LEARNING_RATE, \
+from q_learning_taxi_env_agent.hyper_parameters.parameters import N_TRAINING_EPISODES, N_PLAYING_EPISODES, SEED, LEARNING_RATE, \
     START_EPSILON, EPSILON_DECAY, \
     FINAL_EPSILON, DISCOUNT_FACTOR
 
