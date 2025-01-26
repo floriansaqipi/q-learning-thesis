@@ -3,15 +3,15 @@ import gymnasium as gym
 
 from .envrionment import Environment
 from .environment_wrapper import EnvironmentWrapper
-from ..constants import PLAYER_VIDEOS_DIRECTORY, PLAYER_NAME_PREFIX
-
+from ..constans import Constants
 
 class VideoRecordingEnvironment(EnvironmentWrapper):
-    def __init__(self, env: Environment, record_frequency: int, video_directory_name: str):
+    def __init__(self, env: Environment, record_frequency: int, video_directory_name: str, name_prefix: str = Constants.PLAYER_NAME_PREFIX):
         super().__init__(env)
         self.record_frequency = record_frequency
         self.video_directory_name = video_directory_name
+        self.name_prefix = name_prefix
         self.inner_env = gym.wrappers.RecordVideo(
             self.env.inner_env,
-            video_folder=PLAYER_VIDEOS_DIRECTORY + self.video_directory_name, name_prefix=PLAYER_NAME_PREFIX,
+            video_folder=Constants.PLAYER_VIDEOS_DIRECTORY + self.video_directory_name, name_prefix=self.name_prefix,
             episode_trigger=lambda x : x % record_frequency == 0)

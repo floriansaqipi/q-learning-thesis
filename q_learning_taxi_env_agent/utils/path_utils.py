@@ -1,6 +1,6 @@
 import os
 
-from ..constants import PROGRESS_MEMORY_DIRECTORY
+from q_learning_taxi_env_agent.constans.constants import PROGRESS_MEMORY_DIRECTORY
 
 class FileUtils:
     @staticmethod

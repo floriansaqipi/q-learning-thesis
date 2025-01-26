@@ -4,28 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2117307c-a555-48c0-8362-23c29dbf44f9" name="Changes" comment="Improved video recording environment added main scripts for training, inference and rendering">
-      <change afterPath="$PROJECT_DIR$/main3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/deep_q_learning_agent.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/network/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/network/deep_q_learning_network.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/utils/compute_device.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/utils/replay_memory.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/hyper_parameters/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/hyper_parameters/deep_q_learning_hyper_parameters.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/player/deep_q_learning_player.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/player/inference_deep_q_learning_player.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/player/training_deep_q_learning_player.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/q-learning-thesis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/q-learning-thesis.iml" afterDir="false" />
+    <list default="true" id="2117307c-a555-48c0-8362-23c29dbf44f9" name="Changes" comment="Implemented Deep Q Learning player and solving the environment">
+      <change afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/network/convolutiona_deep_q_learning_network.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/constans/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/constans/deep_q_learning_constants.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/constans/q_learning_constans.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main1.py" beforeDir="false" afterPath="$PROJECT_DIR$/main1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main2.py" beforeDir="false" afterPath="$PROJECT_DIR$/main2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main3.py" beforeDir="false" afterPath="$PROJECT_DIR$/main3.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/constants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/parameters.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/hyper_parameters/parameters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/agent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/deep_q_learning_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/deep_q_learning_agent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/network/deep_q_learning_network.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/network/deep_q_learning_network.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/q_learning_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/q_learning_agent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/utils/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/constans/constants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/environment/video_recording_environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/environment/video_recording_environment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/hyper_parameters/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/hyper_parameters/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/hyper_parameters/deep_q_learning_hyper_parameters.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/hyper_parameters/deep_q_learning_hyper_parameters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/hyper_parameters/parameters.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/hyper_parameters/q_learning_hyper_parameters.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/player/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/player/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/player/deep_q_learning_player.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/player/experience_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/utils/experience_handler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/player/inference_deep_q_learning_player.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/player/inference_q_learning_player.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/player/inference_player.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/player/player.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/player/player.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/player/q_learning_player.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/player/training_deep_q_learning_player.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/player/training_q_learning_player.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/player/training_player.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/utils/path_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/utils/path_utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +80,8 @@
       <recent name="E:\Documents\programming\aritificial intelligence\q-learning-thesis" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Documents\programming\aritificial intelligence\q-learning-thesis\q_learning_taxi_env_agent\constans" />
+      <recent name="E:\Documents\programming\aritificial intelligence\q-learning-thesis\q_learning_taxi_env_agent\agent\utils" />
       <recent name="E:\Documents\programming\aritificial intelligence\q-learning-thesis\q_learning_taxi_env_agent\hyper_parameters" />
       <recent name="E:\Documents\programming\aritificial intelligence\q-learning-thesis\q_learning_taxi_env_agent\agent\policy" />
       <recent name="E:\Documents\programming\aritificial intelligence\q-learning-thesis\q_learning_taxi_env_agent\utils" />
@@ -260,7 +270,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736891044382</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Implemented Deep Q Learning player and solving the environment">
+      <option name="closed" value="true" />
+      <created>1737834109657</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1737834109657</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -287,14 +305,15 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Refactored the decorator pattern for the environment implementations to a simple property pattern" />
     <MESSAGE value="Improved video recording environment added main scripts for training, inference and rendering" />
-    <option name="LAST_COMMIT_MESSAGE" value="Improved video recording environment added main scripts for training, inference and rendering" />
+    <MESSAGE value="Implemented Deep Q Learning player and solving the environment" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented Deep Q Learning player and solving the environment" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/main1.py</url>
-          <line>13</line>
+          <line>11</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

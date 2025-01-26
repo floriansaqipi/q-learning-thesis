@@ -1,19 +1,17 @@
-from typing import override
+from typing_extensions import override
 
 import numpy as np
 import torch
 import torch.nn.functional as functional
 import torch.optim as optim
-from sympy.physics.paulialgebra import epsilon
 
 from .agent import Agent
 from .network import DeepQLearningNetwork
-from .policy import EpsilonGreedyPolicy
 from .utils import ReplayMemory, ComputeDevice
 from ..environment import Environment
+from ..constans import Constants
 
-
-class DeepQLearningAgent(Agent, EpsilonGreedyPolicy):
+class DeepQLearningAgent(Agent):
 
     def __init__(
             self,
@@ -87,6 +85,16 @@ class DeepQLearningAgent(Agent, EpsilonGreedyPolicy):
             target_parameter.data.copy_(
                 self.interpolation_parameter * local_parameter +
                     (1.0 - self.interpolation_parameter) * target_parameter)
+
+    @override
+    def save_progress(self, file_name: str):
+        file_full_path = Constants.PROGRESS_MEMORY_DIRECTORY + file_name
+        torch.save(self.agent.q_network.state_dict(), file_full_path)
+
+    @override
+    def load_progress(self, file_name: str):
+        file_full_path = Constants.PROGRESS_MEMORY_DIRECTORY + file_name
+        self.agent.q_network.load_state_dict(torch.load(file_full_path, weights_only=True))
 
     @override
     def decay_epsilon(self):

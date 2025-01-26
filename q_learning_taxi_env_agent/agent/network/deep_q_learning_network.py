@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as functional
 
-from q_learning_taxi_env_agent.hyper_parameters.parameters import SEED
+from q_learning_taxi_env_agent.hyper_parameters.q_learning_hyper_parameters import SEED
 
 
 class DeepQLearningNetwork(nn.Module):

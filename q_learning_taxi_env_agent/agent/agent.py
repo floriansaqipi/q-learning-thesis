@@ -1,10 +1,11 @@
 
 from abc import ABC, abstractmethod
 
+from .utils import ExperienceHandler
 from ..environment import Environment
 
 
-class Agent(ABC):
+class Agent(ABC, ExperienceHandler):
 
     def __init__(self, env: Environment):
         self.env = env
@@ -20,6 +21,10 @@ class Agent(ABC):
 
     @abstractmethod
     def update(self, obs, action, reward, terminated, next_obs):
+        pass
+
+    @abstractmethod
+    def decay_epsilon(self):
         pass
 
     def get_training_error(self):

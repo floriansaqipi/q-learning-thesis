@@ -1,3 +1,3 @@
 
-from .parameters import *
+from .q_learning_hyper_parameters import *
 from .deep_q_learning_hyper_parameters import *

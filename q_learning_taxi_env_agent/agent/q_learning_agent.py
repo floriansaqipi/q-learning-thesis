@@ -1,11 +1,11 @@
 import numpy as np
-from typing_extensions import override
+from typing import override
 
 from .agent import Agent
-from .policy import EpsilonGreedyPolicy
 from ..environment import Environment
+from ..constans import Constants
 
-class QLearningAgent(Agent, EpsilonGreedyPolicy):
+class QLearningAgent(Agent):
 
     def __init__(self,
             env: Environment,
@@ -46,5 +46,19 @@ class QLearningAgent(Agent, EpsilonGreedyPolicy):
         return int(np.argmax(self.q_values[obs]))
 
     @override
+    def save_progress(self, file_name: str):
+        file_full_path = Constants.PROGRESS_MEMORY_DIRECTORY + file_name
+        q_values_str_keys = {str(k): v for k, v in self.agent.q_values.items()}
+        np.savez(file_full_path, **q_values_str_keys)
+
+    @override
+    def load_progress(self, file_name: str):
+        file_full_path = Constants.PROGRESS_MEMORY_DIRECTORY + file_name
+        loaded_q_values = np.load(file_full_path)
+        self.agent.q_values = {int(key): loaded_q_values[key] for key in loaded_q_values.keys()}
+
+    @override
     def decay_epsilon(self):
         self.epsilon = max(self.final_epsilon, self.epsilon - self.epsilon_decay)
+
+

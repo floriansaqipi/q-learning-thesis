@@ -1,11 +1,13 @@
-from .deep_q_learning_player import DeepQLearningPlayer
-from ..agent import DeepQLearningAgent
+
+from ..agent import Agent
 from ..environment import Environment
+from .player import Player
 
 
-class TrainingDeepQLearningPlayer(DeepQLearningPlayer):
-    def __init__(self,env: Environment, agent: DeepQLearningAgent, n_episodes : int = None):
-        super().__init__(env, agent, n_episodes)
+
+class InferencePlayer(Player):
+    def __init__(self, agent: Agent, env: Environment, n_episodes: int = None):
+        super().__init__(agent, env, n_episodes)
 
     def play(self):
         episode_count = 0
@@ -15,13 +17,11 @@ class TrainingDeepQLearningPlayer(DeepQLearningPlayer):
             done = False
 
             while not done:
-                action = self.agent.get_action(obs)
+                action = self.agent.get_best_action(obs)
                 next_obs, reward, terminated, truncated, info = self.env.step(action)
-                self.agent.update(obs, action, reward, terminated, next_obs)
                 obs = next_obs
                 done = terminated or truncated
 
-            self.agent.decay_epsilon()
             episode_count += 1
             self.progress_bar.update(1)
 
