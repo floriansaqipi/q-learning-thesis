@@ -1,2 +1,3 @@
 
 from .deep_q_learning_network import DeepQLearningNetwork
+from .convolutional_deep_q_learning_network import ConvolutionalDeepQLearningNetwork

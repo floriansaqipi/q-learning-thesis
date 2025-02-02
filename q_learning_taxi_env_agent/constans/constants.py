@@ -5,3 +5,4 @@ class Constants:
     PLAYER_NAME_PREFIX = "player"
     ENVIRONMENT_ID_TAXI_V3 = "Taxi-v3"
     ENVIRONMENT_LUNAR_LANDER_V3 = "LunarLander-v3"
+    ENVIRONMENT_ALE_MS_PACMAN_V5 = "ALE/MsPacman-v5"

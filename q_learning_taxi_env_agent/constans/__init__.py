@@ -1,3 +1,4 @@
-from .constants import *
-from .q_learning_constans import *
-from .deep_q_learning_constants import *
+from .constants import Constants
+from .q_learning_constans import QLearningConstants
+from .deep_q_learning_constants import DeepQLearningConstants
+from .convolutional_deep_q_learning_constants import ConvolutionalDeepQLearningConstants

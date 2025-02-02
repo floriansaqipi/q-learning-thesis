@@ -1,5 +1,5 @@
 
-from .agent import QLearningAgent, DeepQLearningAgent
+from .agent import QLearningAgent, DeepQLearningAgent, ConvolutionalDeepQLearningAgent, ReplayMemory
 from .environment import Environment, StatisticsRecordingEnvironment, VideoRecordingEnvironment
 from .result_visualiser import GraphVisualiser
 from .constans import *

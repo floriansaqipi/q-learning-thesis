@@ -6,7 +6,7 @@ from collections import deque
 
 from .compute_device import ComputeDevice
 
-class ReplayMemory(ComputeDevice):
+class ReplayMemory:
     def __init__(self, size: int, batch_size: int):
         self.device = ComputeDevice.get_device()
         self.size = size

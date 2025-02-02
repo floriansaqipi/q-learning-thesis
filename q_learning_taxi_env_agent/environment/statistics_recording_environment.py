@@ -12,11 +12,8 @@ class StatisticsRecordingEnvironment(EnvironmentWrapper, EpisodeQueueProvider):
         self.n_episodes = n_episodes
         self.inner_env = gym.wrappers.RecordEpisodeStatistics(self.env.inner_env, buffer_length=self.n_episodes)
 
-
-    @override
     def get_return_queue(self):
         return self.inner_env.return_queue
 
-    @override
     def get_length_queue(self):
         return self.inner_env.length_queue

@@ -5,7 +5,7 @@ from .utils import ExperienceHandler
 from ..environment import Environment
 
 
-class Agent(ABC, ExperienceHandler):
+class Agent(ExperienceHandler, ABC):
 
     def __init__(self, env: Environment):
         self.env = env
