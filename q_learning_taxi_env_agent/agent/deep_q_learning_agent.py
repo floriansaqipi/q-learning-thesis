@@ -89,7 +89,7 @@ class DeepQLearningAgent(Agent):
 
     def load_progress(self, file_name: str):
         file_full_path = Constants.PROGRESS_MEMORY_DIRECTORY + file_name
-        self.q_network.load_state_dict(torch.load(file_full_path, weights_only=True))
+        self.q_network.load_state_dict(torch.load(file_full_path, map_location=self.device, weights_only=True))
 
     def decay_epsilon(self):
         self.epsilon = max(self.final_epsilon, self.epsilon * self.epsilon_decay)

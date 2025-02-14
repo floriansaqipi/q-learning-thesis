@@ -1,5 +1,4 @@
 from abc import ABC
-from typing import override
 
 from .envrionment import Environment
 

@@ -1,5 +1,4 @@
 import numpy as np
-from typing import override
 
 from .agent import Agent
 from ..environment import Environment
