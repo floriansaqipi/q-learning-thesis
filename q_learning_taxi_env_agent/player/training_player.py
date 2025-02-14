@@ -22,7 +22,7 @@ class TrainingPlayer(Player):
                 obs = next_obs
                 done = terminated or truncated
 
-            self.agent.decay_epsilon()
+            self.agent.end_of_episode_hook()
             episode_count += 1
             self.progress_bar.update(1)
 

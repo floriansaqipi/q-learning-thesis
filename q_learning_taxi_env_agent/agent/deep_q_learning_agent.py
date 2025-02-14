@@ -93,3 +93,6 @@ class DeepQLearningAgent(Agent):
 
     def decay_epsilon(self):
         self.epsilon = max(self.final_epsilon, self.epsilon * self.epsilon_decay)
+
+    def end_of_episode_hook(self):
+        self.decay_epsilon()

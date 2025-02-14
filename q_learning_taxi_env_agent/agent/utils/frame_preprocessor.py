@@ -14,5 +14,4 @@ class FramePreprocessor:
         frame = frame.astype(np.float32) / 255.0
         frame = np.transpose(frame, (2, 0, 1))
 
-        frame = torch.tensor(frame, dtype=torch.float32, device=self.device).unsqueeze(0)
         return frame

@@ -6,7 +6,7 @@ import torch.optim as optim
 from .agent import Agent
 from .network import ConvolutionalDeepQLearningNetwork
 from .utils import ReplayMemory, ComputeDevice, FramePreprocessor
-from .. import Constants
+from ..constans import Constants
 from ..environment import Environment
 
 
@@ -40,6 +40,7 @@ class ConvolutionalDeepQLearningAgent(Agent):
 
     def get_action(self, obs):
         obs = self.frame_preprocessor.preprocess(obs)
+        obs = torch.tensor(np.array(obs), dtype=torch.float32, device=self.device).unsqueeze(0)
 
         self.q_network.eval()
         with torch.no_grad():
@@ -52,6 +53,8 @@ class ConvolutionalDeepQLearningAgent(Agent):
 
     def get_best_action(self, obs):
         obs = self.frame_preprocessor.preprocess(obs)
+        obs = torch.tensor(np.array(obs), dtype=torch.float32, device=self.device).unsqueeze(0)
+
         self.q_network.eval()
         with torch.no_grad():
             action_values = self.q_network(obs)
@@ -94,3 +97,6 @@ class ConvolutionalDeepQLearningAgent(Agent):
 
     def decay_epsilon(self):
         self.epsilon = max(self.final_epsilon, self.epsilon * self.epsilon_decay)
+
+    def end_of_episode_hook(self):
+        self.decay_epsilon()

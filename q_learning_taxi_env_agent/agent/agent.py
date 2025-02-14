@@ -23,8 +23,7 @@ class Agent(ExperienceHandler, ABC):
     def update(self, obs, action, reward, terminated, next_obs):
         pass
 
-    @abstractmethod
-    def decay_epsilon(self):
+    def end_of_episode_hook(self):
         pass
 
     def get_training_error(self):

@@ -4,8 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2117307c-a555-48c0-8362-23c29dbf44f9" name="Changes" comment="Refactored the player structure and clean up agent specific constants">
+    <list default="true" id="2117307c-a555-48c0-8362-23c29dbf44f9" name="Changes" comment="added missing files">
+      <change afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/A3C_agent.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/network/A3C_network.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/hyper_parameters/A3C_hyper_parameters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/agent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/convolutional_deep_q_learning_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/convolutional_deep_q_learning_agent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/deep_q_learning_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/deep_q_learning_agent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/network/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/network/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/q_learning_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/q_learning_agent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/utils/frame_preprocessor.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/utils/frame_preprocessor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/constans/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/constans/constants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/environment/envrionment.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/environment/envrionment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/hyper_parameters/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/hyper_parameters/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/hyper_parameters/convolutional_deep_q_learning_hyper_parameters.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/hyper_parameters/convolutional_deep_q_learning_hyper_parameters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/player/training_player.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/player/training_player.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,24 +47,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.blackjack.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.main (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.main1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main3.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main4.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main5.executor&quot;: &quot;Run&quot;,
-    &quot;Python.q_learning_taxi_env.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Documents/programming/aritificial intelligence/q-learning-thesis&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.blackjack.executor": "Debug",
+    "Python.main (1).executor": "Run",
+    "Python.main.executor": "Debug",
+    "Python.main1.executor": "Run",
+    "Python.main2.executor": "Run",
+    "Python.main3.executor": "Run",
+    "Python.main4.executor": "Run",
+    "Python.main5.executor": "Run",
+    "Python.main6.executor": "Run",
+    "Python.q_learning_taxi_env.executor": "Run",
+    "Python.test.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "E:/Documents/programming/aritificial intelligence/q-learning-thesis",
+    "settings.editor.selected.configurable": "preferences.keymap"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Documents\programming\aritificial intelligence\q-learning-thesis" />
@@ -62,7 +79,7 @@
       <recent name="E:\Documents\programming\aritificial intelligence\q-learning-thesis\q_learning_taxi_env_agent\utils" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main5">
+  <component name="RunManager" selected="Python.main6">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="q-learning-thesis" />
       <option name="ENV_FILES" value="" />
@@ -99,28 +116,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="main2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="q-learning-thesis" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -195,21 +190,43 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="main6" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="q-learning-thesis" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main6.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.main6" />
       <item itemvalue="Python.main1" />
-      <item itemvalue="Python.main2" />
       <item itemvalue="Python.main3" />
       <item itemvalue="Python.main4" />
       <item itemvalue="Python.main5" />
-      <item itemvalue="Python.main" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main6" />
         <item itemvalue="Python.main5" />
         <item itemvalue="Python.main4" />
         <item itemvalue="Python.main3" />
         <item itemvalue="Python.main1" />
-        <item itemvalue="Python.main2" />
       </list>
     </recent_temporary>
   </component>
@@ -261,7 +278,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737919144738</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added missing files">
+      <option name="closed" value="true" />
+      <created>1739031217208</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1739031217208</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -290,7 +315,8 @@
     <MESSAGE value="Improved video recording environment added main scripts for training, inference and rendering" />
     <MESSAGE value="Implemented Deep Q Learning player and solving the environment" />
     <MESSAGE value="Refactored the player structure and clean up agent specific constants" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactored the player structure and clean up agent specific constants" />
+    <MESSAGE value="added missing files" />
+    <option name="LAST_COMMIT_MESSAGE" value="added missing files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
