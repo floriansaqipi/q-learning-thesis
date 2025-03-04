@@ -9,7 +9,7 @@ from q_learning_taxi_env_agent.hyper_parameters.convolutional_deep_q_learning_hy
 
 RECORD_FREQUENCY = N_TRAINING_EPISODES / 10
 
-env = Environment(ConvolutionalDeepQLearningConstants.ENVIRONMENT_ALE_MS_PACMAN_V5, RenderMode.RGB_ARRAY)
+env = Environment(ConvolutionalDeepQLearningConstants.ENVIRONMENT_ALE_MS_PACMAN_DETERMINISTIC_V4, RenderMode.RGB_ARRAY)
 statistics_recording_env = StatisticsRecordingEnvironment(env, N_TRAINING_EPISODES)
 video_recording_env = VideoRecordingEnvironment(statistics_recording_env, RECORD_FREQUENCY,
                                                 ConvolutionalDeepQLearningConstants.TRAINING_PLAYER_VIDEOS_DIRECTORY_NAME)

@@ -1,6 +1,6 @@
 from abc import ABC
 
-from .envrionment import Environment
+from .environment import Environment
 
 
 class EnvironmentWrapper(Environment, ABC):

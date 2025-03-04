@@ -8,19 +8,17 @@ from ..render_modes import RenderMode
 
 class Environment:
 
-    def __init__(self, env_id: str, render_mode: RenderMode = RenderMode.NONE, seed: int = None, number_of_envs: int = None):
+    def __init__(self, env_id: str, render_mode: RenderMode = RenderMode.NONE, seed: int = None):
         gym.register_envs(ale_py)
 
         self.env_id = env_id
         self.render_mode = render_mode
         self.seed = seed
-        self.number_of_envs = number_of_envs
 
-        if number_of_envs is None or number_of_envs == 1:
-            self.inner_env = gym.make(env_id, render_mode=render_mode.value)
-        else:
-            self.inner_env = gym.make_vec(env_id, num_envs=number_of_envs, vectorization_mode="async", render_mode=render_mode.value)
+        self.inner_env = self.make_gym_env()
 
+    def make_gym_env(self):
+        return gym.make(self.env_id, render_mode=self.render_mode.value)
 
     def step(self, action):
         return self.inner_env.step(action)

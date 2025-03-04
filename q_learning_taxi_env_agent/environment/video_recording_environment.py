@@ -1,7 +1,7 @@
 import gymnasium as gym
 
 from .environment_wrapper import EnvironmentWrapper
-from .envrionment import Environment
+from .environment import Environment
 from ..constans import Constants
 
 

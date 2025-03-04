@@ -1,7 +1,6 @@
 import gymnasium as gym
-from typing_extensions import override
 
-from .envrionment import Environment
+from .environment import Environment
 from .environment_wrapper import EnvironmentWrapper
 from .episode_queue_provider import EpisodeQueueProvider
 

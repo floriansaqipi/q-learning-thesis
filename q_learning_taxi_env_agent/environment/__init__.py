@@ -1,5 +1,6 @@
 from .episode_queue_provider import EpisodeQueueProvider
-from .envrionment import Environment
+from .environment import Environment
 from .environment_wrapper import EnvironmentWrapper
 from .statistics_recording_environment import StatisticsRecordingEnvironment
 from .video_recording_environment import VideoRecordingEnvironment
+from .vectorized_environment import VectorizedEnvironment

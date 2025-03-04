@@ -39,7 +39,7 @@ class ConvolutionalDeepQLearningAgent(Agent):
         self.frame_preprocessor = FramePreprocessor()
 
     def get_action(self, obs):
-        obs = self.frame_preprocessor.preprocess(obs)
+        obs = self.frame_preprocessor.preprocess_frame(obs)
         obs = torch.tensor(np.array(obs), dtype=torch.float32, device=self.device).unsqueeze(0)
 
         self.q_network.eval()
@@ -52,7 +52,7 @@ class ConvolutionalDeepQLearningAgent(Agent):
             return torch.argmax(action_values, dim=1).item()
 
     def get_best_action(self, obs):
-        obs = self.frame_preprocessor.preprocess(obs)
+        obs = self.frame_preprocessor.preprocess_frame(obs)
         obs = torch.tensor(np.array(obs), dtype=torch.float32, device=self.device).unsqueeze(0)
 
         self.q_network.eval()
@@ -62,8 +62,8 @@ class ConvolutionalDeepQLearningAgent(Agent):
         return torch.argmax(action_values, dim=1).item()
 
     def update(self, obs, action, reward, terminated, next_obs):
-        obs = self.frame_preprocessor.preprocess(obs)
-        next_obs = self.frame_preprocessor.preprocess(next_obs)
+        obs = self.frame_preprocessor.preprocess_frame(obs)
+        next_obs = self.frame_preprocessor.preprocess_frame(next_obs)
         self.replay_memory.append((obs, action, reward, terminated, next_obs))
         if len(self.replay_memory.memory) > self.replay_memory.batch_size:
             transitions = self.replay_memory.sample()
@@ -76,7 +76,7 @@ class ConvolutionalDeepQLearningAgent(Agent):
         q_target_values = reward_batch + ((~terminated_batch) * self.discount_factor * future_q_target_values)
         q_values = self.q_network(obs_batch).gather(1, actions_batch)
         loss = functional.mse_loss(q_values, q_target_values)
-        self.training_error.append(q_values)
+        self.training_error.append(loss.item())
         self.optimizer.zero_grad()
         loss.backward()
         self.optimizer.step()
@@ -93,7 +93,7 @@ class ConvolutionalDeepQLearningAgent(Agent):
 
     def load_progress(self, file_name: str):
         file_full_path = Constants.PROGRESS_MEMORY_DIRECTORY + file_name
-        self.q_network.load_state_dict(torch.load(file_full_path, map_location=self.device ,weights_only=True))
+        self.q_network.load_state_dict(torch.load(file_full_path, weights_only=True))
 
     def decay_epsilon(self):
         self.epsilon = max(self.final_epsilon, self.epsilon * self.epsilon_decay)
