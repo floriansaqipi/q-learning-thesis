@@ -20,7 +20,7 @@ agent = DeepQLearningAgent(video_recording_env, LEARNING_RATE, DISCOUNT_FACTOR, 
 
 player = TrainingPlayer(agent, video_recording_env, N_TRAINING_EPISODES)
 player.play()
-player.save_progress(DeepQLearningConstants.PROGRESS_MEMORY_FILE_NAME)
+player.save_progress(0)
 
 visualiser = GraphVisualiser(statistics_recording_env, agent)
 visualiser.visualise()

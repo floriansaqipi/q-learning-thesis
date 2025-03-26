@@ -14,7 +14,7 @@ statistics_recording_env = StatisticsRecordingEnvironment(env, N_TRAINING_EPISOD
 agent = QLearningAgent(statistics_recording_env, LEARNING_RATE, START_EPSILON, EPSILON_DECAY, FINAL_EPSILON, DISCOUNT_FACTOR)
 
 player = InferencePlayer(agent, statistics_recording_env)
-player.load_progress(QLearningConstants.PROGRESS_MEMORY_FILE_NAME)
+player.load_progress()
 player.play()
 
 

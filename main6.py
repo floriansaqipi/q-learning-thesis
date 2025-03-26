@@ -22,7 +22,7 @@ agent = ConvolutionalDeepQLearningAgent(video_recording_env, LEARNING_RATE, DISC
 
 player = TrainingPlayer(agent, video_recording_env, N_TRAINING_EPISODES)
 player.play()
-player.save_progress(ConvolutionalDeepQLearningConstants.PROGRESS_MEMORY_FILE_NAME)
+# player.save_progress()
 
 visualiser = GraphVisualiser(statistics_recording_env, agent)
 visualiser.visualise()

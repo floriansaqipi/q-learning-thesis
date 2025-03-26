@@ -7,9 +7,9 @@ import torch.optim as optim
 
 from .agent import Agent
 from .network import DeepQLearningNetwork
-from .utils import ReplayMemory, ComputeDevice
+from .utils import ReplayMemory, ComputeDevice, ExperienceHandler
 from ..environment import Environment
-from ..constans import Constants
+from ..constans import Constants, DeepQLearningConstants
 
 class DeepQLearningAgent(Agent):
 
@@ -59,7 +59,7 @@ class DeepQLearningAgent(Agent):
         self.q_network.train()
         return torch.argmax(action_values, dim=1).item()
 
-    def update(self, obs, action, reward, terminated, next_obs):
+    def update(self, obs, action, reward, terminated, next_obs, truncated=None):
         self.replay_memory.append((obs, action, reward, terminated, next_obs))
         if len(self.replay_memory.memory) > self.replay_memory.batch_size:
             transitions = self.replay_memory.sample()
@@ -83,12 +83,12 @@ class DeepQLearningAgent(Agent):
                 self.interpolation_parameter * local_parameter +
                     (1.0 - self.interpolation_parameter) * target_parameter)
 
-    def save_progress(self, file_name: str):
-        file_full_path = Constants.PROGRESS_MEMORY_DIRECTORY + file_name
+    def save_progress(self, save_frequency=0, episode_number=0, return_queue=None, length_queue=None):
+        file_full_path = DeepQLearningConstants.PROGRESS_MEMORY_DIRECTORY + DeepQLearningConstants.PROGRESS_MEMORY_FILE_NAME
         torch.save(self.q_network.state_dict(), file_full_path)
 
-    def load_progress(self, file_name: str):
-        file_full_path = Constants.PROGRESS_MEMORY_DIRECTORY + file_name
+    def load_progress(self):
+        file_full_path = DeepQLearningConstants.PROGRESS_MEMORY_DIRECTORY + file_name
         self.q_network.load_state_dict(torch.load(file_full_path, weights_only=True))
 
     def decay_epsilon(self):

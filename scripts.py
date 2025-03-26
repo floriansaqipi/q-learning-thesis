@@ -1,0 +1,5 @@
+from q_learning_taxi_env_agent import A3CConstants
+from q_learning_taxi_env_agent.result_visualiser.offline_graph_visualiser import OfflineGraphVisualiser
+
+visualiser = OfflineGraphVisualiser(A3CConstants.PROGRESS_STATISTICS_FILE_NAME)
+visualiser.visualise()

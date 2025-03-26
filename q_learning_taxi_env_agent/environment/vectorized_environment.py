@@ -11,3 +11,6 @@ class VectorizedEnvironment(EnvironmentWrapper):
 
         inner_envs = [lambda : env.inner_env] + [lambda: self.make_gym_env() for _ in range(number_of_envs - 1)]
         self.inner_env = AsyncVectorEnv(inner_envs)
+
+    def get_action_space(self):
+        return self.inner_env.action_space[0]

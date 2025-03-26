@@ -1,6 +1,7 @@
 import numpy as np
 
 from .agent import Agent
+from .utils import ExperienceHandler
 from ..environment import Environment
 from ..constans import Constants
 
@@ -23,7 +24,7 @@ class QLearningAgent(Agent):
         self.final_epsilon = final_epsilon
         self.discount_factor = discount_factor
 
-    def update(self, obs, action, reward, terminated, next_obs):
+    def update(self, obs, action, reward, terminated, next_obs, truncated=None):
         future_q_value = (not terminated) * np.max(self.q_values[next_obs])
         q_value = reward + (self.discount_factor * future_q_value)
         temporal_difference = q_value - self.q_values[obs][action]
@@ -40,12 +41,12 @@ class QLearningAgent(Agent):
     def get_best_action(self, obs):
         return int(np.argmax(self.q_values[obs]))
 
-    def save_progress(self, file_name: str):
+    def save_progress(self, save_frequency=0, episode_number: int = 0, return_queue=None, length_queue=None):
         file_full_path = Constants.PROGRESS_MEMORY_DIRECTORY + file_name
         q_values_str_keys = {str(k): v for k, v in self.q_values.items()}
         np.savez(file_full_path, **q_values_str_keys)
 
-    def load_progress(self, file_name: str):
+    def load_progress(self):
         file_full_path = Constants.PROGRESS_MEMORY_DIRECTORY + file_name
         loaded_q_values = np.load(file_full_path)
         self.q_values = {int(key): loaded_q_values[key] for key in loaded_q_values.keys()}

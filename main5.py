@@ -17,5 +17,5 @@ replay_memory = ReplayMemory(REPLAY_MEMORY_SIZE, REPLAY_MEMORY_BATCH_SIZE)
 agent = DeepQLearningAgent(env, LEARNING_RATE, DISCOUNT_FACTOR, INTERPOLATION_PARAMETER, START_EPSILON, EPSILON_DECAY, FINAL_EPSILON, replay_memory)
 
 player = InferencePlayer(agent, env)
-player.load_progress(DeepQLearningConstants.PROGRESS_MEMORY_FILE_NAME)
+player.load_progress()
 player.play()

@@ -37,3 +37,6 @@ class Environment:
 
     def close(self):
         return self.inner_env.close()
+
+    def unwrap(self):
+        return self.inner_env

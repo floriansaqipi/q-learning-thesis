@@ -20,7 +20,7 @@ class Agent(ExperienceHandler, ABC):
         pass
 
     @abstractmethod
-    def update(self, obs, action, reward, terminated, next_obs):
+    def update(self, obs, action, reward, terminated, next_obs, truncated = None):
         pass
 
     def end_of_episode_hook(self):

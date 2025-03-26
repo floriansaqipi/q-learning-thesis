@@ -5,7 +5,7 @@ import torch.optim as optim
 
 from .agent import Agent
 from .network import ConvolutionalDeepQLearningNetwork
-from .utils import ReplayMemory, ComputeDevice, FramePreprocessor
+from .utils import ReplayMemory, ComputeDevice, FramePreprocessor, ExperienceHandler
 from ..constans import Constants
 from ..environment import Environment
 
@@ -61,7 +61,7 @@ class ConvolutionalDeepQLearningAgent(Agent):
         self.q_network.train()
         return torch.argmax(action_values, dim=1).item()
 
-    def update(self, obs, action, reward, terminated, next_obs):
+    def update(self, obs, action, reward, terminated, next_obs, truncated=None):
         obs = self.frame_preprocessor.preprocess_frame(obs)
         next_obs = self.frame_preprocessor.preprocess_frame(next_obs)
         self.replay_memory.append((obs, action, reward, terminated, next_obs))
@@ -87,11 +87,11 @@ class ConvolutionalDeepQLearningAgent(Agent):
                 self.interpolation_parameter * local_parameter +
                     (1.0 - self.interpolation_parameter) * target_parameter)
 
-    def save_progress(self, file_name: str):
+    def save_progress(self, save_frequency=0, episode_number: int = 0, return_queue=None, length_queue=None):
         file_full_path = Constants.PROGRESS_MEMORY_DIRECTORY + file_name
         torch.save(self.q_network.state_dict(), file_full_path)
 
-    def load_progress(self, file_name: str):
+    def load_progress(self):
         file_full_path = Constants.PROGRESS_MEMORY_DIRECTORY + file_name
         self.q_network.load_state_dict(torch.load(file_full_path, weights_only=True))
 

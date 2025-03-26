@@ -4,55 +4,59 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2117307c-a555-48c0-8362-23c29dbf44f9" name="Changes" comment="added a3c changes">
-      <change afterPath="$PROJECT_DIR$/main9.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/utils/transition_converter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/constans/A3C_constants.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/environment/vectorized_environment.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/player/vectorized_training_player.py" afterDir="false" />
+    <list default="true" id="2117307c-a555-48c0-8362-23c29dbf44f9" name="Changes" comment="Added unversioned files">
+      <change afterPath="$PROJECT_DIR$/main10.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main11.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/A2C_agent.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/A3C_experience_agent.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/utils/A3C_global_network.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/utils/json_progress_handler.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/constans/A2C_constants.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/hyper_parameters/A2C_hyper_parameters.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/player/life_reset_training_player.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/player_videos/training_A2C_player_videos/player-episode-0.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/progress_memory/A2C_network_weights.pth" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/result_visualiser/offline_graph_visualiser.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main1.py" beforeDir="false" afterPath="$PROJECT_DIR$/main1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main2.py" beforeDir="false" afterPath="$PROJECT_DIR$/main2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main3.py" beforeDir="false" afterPath="$PROJECT_DIR$/main3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main4.py" beforeDir="false" afterPath="$PROJECT_DIR$/main4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main5.py" beforeDir="false" afterPath="$PROJECT_DIR$/main5.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main6.py" beforeDir="false" afterPath="$PROJECT_DIR$/main6.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main9.py" beforeDir="false" afterPath="$PROJECT_DIR$/main9.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/A3C_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/A3C_agent.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/agent.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/convolutional_deep_q_learning_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/convolutional_deep_q_learning_agent.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/deep_q_learning_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/deep_q_learning_agent.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/network/A3C_network.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/network/A3C_network.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/network/convolutional_deep_q_learning_network.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/network/convolutional_deep_q_learning_network.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/q_learning_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/q_learning_agent.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/utils/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/utils/frame_preprocessor.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/utils/frame_preprocessor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/utils/replay_memory.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/utils/replay_memory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/utils/experience_handler.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/utils/experience_handler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/utils/transition_converter.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/utils/transition_converter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/constans/A3C_constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/constans/A3C_constants.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/constans/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/constans/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/constans/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/constans/constants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/environment/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/environment/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/environment/environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/environment/environment.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/environment/environment_wrapper.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/environment/environment_wrapper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/environment/envrionment.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/environment/environment.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/environment/statistics_recording_environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/environment/statistics_recording_environment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/environment/vectorized_environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/environment/vectorized_environment.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/environment/video_recording_environment.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/environment/video_recording_environment.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/hyper_parameters/A3C_hyper_parameters.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/hyper_parameters/A3C_hyper_parameters.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/hyper_parameters/convolutional_deep_q_learning_hyper_parameters.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/hyper_parameters/convolutional_deep_q_learning_hyper_parameters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/hyper_parameters/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/hyper_parameters/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/player/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/player/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/player_videos/training_convolutional_deep_q_learning_player_videos/player-episode-0.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/player_videos/training_convolutional_deep_q_learning_player_videos/player-episode-1000.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/player_videos/training_convolutional_deep_q_learning_player_videos/player-episode-1200.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/player_videos/training_convolutional_deep_q_learning_player_videos/player-episode-1400.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/player_videos/training_convolutional_deep_q_learning_player_videos/player-episode-1600.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/player_videos/training_convolutional_deep_q_learning_player_videos/player-episode-1800.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/player_videos/training_convolutional_deep_q_learning_player_videos/player-episode-200.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/player_videos/training_convolutional_deep_q_learning_player_videos/player-episode-400.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/player_videos/training_convolutional_deep_q_learning_player_videos/player-episode-600.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/player_videos/training_convolutional_deep_q_learning_player_videos/player-episode-800.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/player_videos/training_deep_q_learning_player_videos/player-episode-0.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/player_videos/training_deep_q_learning_player_videos/player-episode-1000.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/player_videos/training_deep_q_learning_player_videos/player-episode-1200.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/player_videos/training_deep_q_learning_player_videos/player-episode-1400.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/player_videos/training_deep_q_learning_player_videos/player-episode-1600.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/player_videos/training_deep_q_learning_player_videos/player-episode-1800.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/player_videos/training_deep_q_learning_player_videos/player-episode-200.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/player_videos/training_deep_q_learning_player_videos/player-episode-400.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/player_videos/training_deep_q_learning_player_videos/player-episode-600.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/player_videos/training_deep_q_learning_player_videos/player-episode-800.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/progress_memory/deep_q_learning_network_weights.pth" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/player/player.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/player/player.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/player/training_player.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/player/training_player.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/player/vectorized_training_player.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/player/vectorized_training_player.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/player_videos/training_A3C_player_videos/player-episode-0.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/player_videos/training_A3C_player_videos/player-episode-200.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/progress_memory/A3C_network_weights.pth" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/result_visualiser/graph_visualiser.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/result_visualiser/graph_visualiser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/result_visualiser/visualiser.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/result_visualiser/visualiser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,41 +82,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.blackjack.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.main (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.main1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main2.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main3.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main4.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main5.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main6.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main9.executor&quot;: &quot;Debug&quot;,
-    &quot;Python.q_learning_taxi_env.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Documents/programming/aritificial intelligence/q-learning-thesis/q_learning_taxi_env_agent/player_videos&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.blackjack.executor": "Debug",
+    "Python.main (1).executor": "Run",
+    "Python.main.executor": "Debug",
+    "Python.main1.executor": "Run",
+    "Python.main10.executor": "Debug",
+    "Python.main11.executor": "Debug",
+    "Python.main2.executor": "Run",
+    "Python.main3.executor": "Run",
+    "Python.main4.executor": "Run",
+    "Python.main5.executor": "Run",
+    "Python.main6.executor": "Debug",
+    "Python.main9.executor": "Debug",
+    "Python.q_learning_taxi_env.executor": "Run",
+    "Python.scripts.executor": "Run",
+    "Python.test.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "E:/Documents/programming/aritificial intelligence/q-learning-thesis/q_learning_taxi_env_agent/progress_memory",
+    "settings.editor.selected.configurable": "preferences.keymap"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Documents\programming\aritificial intelligence\q-learning-thesis\q_learning_taxi_env_agent\player_videos" />
+      <recent name="E:\Documents\programming\aritificial intelligence\q-learning-thesis\q_learning_taxi_env_agent\progress_memory" />
+      <recent name="E:\Documents\programming\aritificial intelligence\q-learning-thesis\q_learning_taxi_env_agent\agent" />
       <recent name="E:\Documents\programming\aritificial intelligence\q-learning-thesis" />
+      <recent name="E:\Documents\programming\aritificial intelligence\q-learning-thesis\q_learning_taxi_env_agent\player_videos" />
       <recent name="E:\Documents\programming\aritificial intelligence\q-learning-thesis\q_learning_taxi_env_agent\constans" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Documents\programming\aritificial intelligence\q-learning-thesis\q_learning_taxi_env_agent\pics\A2C" />
       <recent name="E:\Documents\programming\aritificial intelligence\q-learning-thesis" />
       <recent name="E:\Documents\programming\aritificial intelligence\q-learning-thesis\q_learning_taxi_env_agent\constans" />
       <recent name="E:\Documents\programming\aritificial intelligence\q-learning-thesis\q_learning_taxi_env_agent\agent\utils" />
       <recent name="E:\Documents\programming\aritificial intelligence\q-learning-thesis\q_learning_taxi_env_agent\hyper_parameters" />
-      <recent name="E:\Documents\programming\aritificial intelligence\q-learning-thesis\q_learning_taxi_env_agent\agent\policy" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main9">
+  <component name="RunManager" selected="Python.main11">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="q-learning-thesis" />
       <option name="ENV_FILES" value="" />
@@ -135,7 +144,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="main3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="main11" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="q-learning-thesis" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -148,51 +157,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main3.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="main4" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="q-learning-thesis" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main4.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="main5" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="q-learning-thesis" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main5.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main11.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -245,21 +210,65 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="scripts" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="q-learning-thesis" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="q-learning-thesis" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.main" />
-      <item itemvalue="Python.main9" />
+      <item itemvalue="Python.main11" />
       <item itemvalue="Python.main6" />
-      <item itemvalue="Python.main3" />
-      <item itemvalue="Python.main4" />
-      <item itemvalue="Python.main5" />
+      <item itemvalue="Python.main9" />
+      <item itemvalue="Python.scripts" />
+      <item itemvalue="Python.test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main11" />
+        <item itemvalue="Python.scripts" />
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.main9" />
         <item itemvalue="Python.main6" />
-        <item itemvalue="Python.main3" />
-        <item itemvalue="Python.main5" />
-        <item itemvalue="Python.main4" />
       </list>
     </recent_temporary>
   </component>
@@ -327,7 +336,23 @@
       <option name="project" value="LOCAL" />
       <updated>1739570316626</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Implemented A3C training environment">
+      <option name="closed" value="true" />
+      <created>1741121879329</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1741121879329</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Added unversioned files">
+      <option name="closed" value="true" />
+      <created>1741121984036</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1741121984036</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -358,7 +383,9 @@
     <MESSAGE value="Refactored the player structure and clean up agent specific constants" />
     <MESSAGE value="added missing files" />
     <MESSAGE value="added a3c changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="added a3c changes" />
+    <MESSAGE value="Implemented A3C training environment" />
+    <MESSAGE value="Added unversioned files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added unversioned files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -367,6 +394,56 @@
           <url>file://$PROJECT_DIR$/main1.py</url>
           <line>11</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main10.py</url>
+          <line>23</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main6.py</url>
+          <line>26</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/q_learning_taxi_env_agent/agent/A2C_agent.py</url>
+          <line>39</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$APPLICATION_HOME_DIR$/plugins/python-ce/helpers/pydev/pydevd.py</url>
+          <line>1569</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/q_learning_taxi_env_agent/agent/convolutional_deep_q_learning_agent.py</url>
+          <line>77</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/q_learning_taxi_env_agent/agent/A2C_agent.py</url>
+          <line>98</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test.py</url>
+          <line>23</line>
+          <option name="timeStamp" value="77" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test.py</url>
+          <line>19</line>
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/test.py</url>
+          <line>16</line>
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/q_learning_taxi_env_agent/agent/A3C_agent.py</url>
+          <line>110</line>
+          <option name="timeStamp" value="80" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>

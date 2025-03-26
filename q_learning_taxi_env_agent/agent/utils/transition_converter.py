@@ -18,3 +18,12 @@ class TransitionConverter:
 
         return obs_batch, actions_batch, rewards_batch, terminated_batch, next_obs_batch
 
+    def to_tensor_zip(self, transitions):
+        obs_batch, actions_batch, rewards_batch, terminated_batch, next_obs_batch = zip(*transitions)
+
+        obs_batch, actions_batch, rewards_batch, terminated_batch, next_obs_batch = (
+            self.to_tensor(
+                obs_batch, actions_batch, rewards_batch, terminated_batch, next_obs_batch))
+
+        return obs_batch, actions_batch.unsqueeze(1), rewards_batch.unsqueeze(1), terminated_batch.unsqueeze(1), next_obs_batch
+

@@ -16,7 +16,7 @@ video_recording_env = VideoRecordingEnvironment(statistics_recording_env, RECORD
 agent = QLearningAgent(video_recording_env, LEARNING_RATE, START_EPSILON, EPSILON_DECAY, FINAL_EPSILON, DISCOUNT_FACTOR)
 
 player = InferencePlayer(agent, video_recording_env, N_PLAYING_EPISODES)
-player.load_progress(QLearningConstants.PROGRESS_MEMORY_FILE_NAME)
+player.load_progress()
 player.play()
 
 
