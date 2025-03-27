@@ -28,7 +28,7 @@ def create_main_worker():
 
 
 def create_default_worker():
-    default_env = Environment(A3CConstants.ENVIRONMENT_ALE_BREAKOUT_DETERMINISTIC_V4, RenderMode.RGB_ARRAY)
+    default_env = Environment(A3CConstants.ENVIRONMENT_ALE_BREAKOUT_NO_FRAMESKIP_V4, RenderMode.RGB_ARRAY)
 
     agent = A3CAgent(default_env, a3c_global_network, DISCOUNT_FACTOR, ENTROPY_REGULARIZATION_COEFFICIENT,
                      VALUE_LOSS_COEFFICIENT, N_STEPS, MAX_NORM)
@@ -41,7 +41,7 @@ def create_default_worker():
 if __name__ == "__main__":
     mp.set_start_method('spawn', force=True)
 
-    env = Environment(A3CConstants.ENVIRONMENT_ALE_BREAKOUT_DETERMINISTIC_V4, RenderMode.RGB_ARRAY)
+    env = Environment(A3CConstants.ENVIRONMENT_ALE_BREAKOUT_NO_FRAMESKIP_V4, RenderMode.RGB_ARRAY)
 
     a3c_global_network = A3CGlobalNetwork(env, LEARNING_RATE, DECAY_FACTOR, EPSILON)
     a3c_global_network.load_progress()

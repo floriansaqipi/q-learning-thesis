@@ -8,7 +8,7 @@ RECORD_FREQUENCY = N_PLAYING_EPISODES / 10
 
 if __name__ == "__main__":
 
-    env = Environment(A2CConstants.ENVIRONMENT_ALE_BREAKOUT_DETERMINISTIC_V4, RenderMode.RGB_ARRAY)
+    env = Environment(A2CConstants.ENVIRONMENT_ALE_BREAKOUT_NO_FRAMESKIP_V4, RenderMode.RGB_ARRAY)
     statistics_recording_env = StatisticsRecordingEnvironment(env, N_PLAYING_EPISODES)
     video_recording_env = VideoRecordingEnvironment(statistics_recording_env, RECORD_FREQUENCY,
                                                     A2CConstants.INFERENCE_PLAYER_VIDEOS_DIRECTORY_NAME)

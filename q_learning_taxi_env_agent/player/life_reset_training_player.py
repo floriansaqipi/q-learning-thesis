@@ -19,7 +19,6 @@ class LifeResetTrainingPlayer(TrainingPlayer):
                 next_obs, reward, terminated, truncated, info = self.env.step(action)
                 current_lives = info.get('lives', 0)
 
-
                 if current_lives < prev_lives:
                     next_obs, _, _, _, info = self.env.step(1)
                     prev_lives = current_lives

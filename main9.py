@@ -10,7 +10,7 @@ SAVING_FREQUENCY = N_TRAINING_EPISODES / 100
 
 if __name__ == "__main__":
 
-    env = Environment(A2CConstants.ENVIRONMENT_ALE_BREAKOUT_DETERMINISTIC_V4, RenderMode.RGB_ARRAY)
+    env = Environment(A2CConstants.ENVIRONMENT_ALE_BREAKOUT_NO_FRAMESKIP_V4, RenderMode.RGB_ARRAY)
     statistics_recording_env = StatisticsRecordingEnvironment(env, N_TRAINING_EPISODES)
     video_recording_env = VideoRecordingEnvironment(statistics_recording_env, RECORD_FREQUENCY,
                                                     A2CConstants.TRAINING_PLAYER_VIDEOS_DIRECTORY_NAME)

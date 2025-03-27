@@ -115,20 +115,20 @@ class A3CAgent(Agent):
         if self.training_error_enabled :
             self.training_error.append(total_loss.detach().item())
 
-        # with torch.multiprocessing.Lock():
-        self.a3c_global_network.optimizer.zero_grad()
-        total_loss.backward()
-        torch.nn.utils.clip_grad_norm_(self.network.parameters(), max_norm=self.max_norm)
-        self.update_global()
-        self.a3c_global_network.optimizer.step()
+        with torch.multiprocessing.Lock():
+            self.a3c_global_network.optimizer.zero_grad()
+            total_loss.backward()
+            torch.nn.utils.clip_grad_norm_(self.network.parameters(), max_norm=self.max_norm)
+            self.update_global()
+            self.a3c_global_network.optimizer.step()
 
 
     def update_global(self):
         for local_param, global_param in zip(self.network.parameters(), self.a3c_global_network.network.parameters()):
-            # if global_param.grad is None:
-            global_param.grad = local_param.grad
-            # else:
-            #     global_param.grad += local_param.grad
+            if global_param.grad is None:
+                global_param._grad = local_param.grad
+            else:
+                global_param._grad += local_param.grad
 
 
     def load_progress(self):

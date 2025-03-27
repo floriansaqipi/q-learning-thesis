@@ -13,4 +13,4 @@ class Constants:
     ENVIRONMENT_ID_TAXI_V3 = "Taxi-v3"
     ENVIRONMENT_LUNAR_LANDER_V3 = "LunarLander-v3"
     ENVIRONMENT_ALE_MS_PACMAN_DETERMINISTIC_V4 = "MsPacmanDeterministic-v4"
-    ENVIRONMENT_ALE_BREAKOUT_DETERMINISTIC_V4 = "BreakoutDeterministic-v4"
+    ENVIRONMENT_ALE_BREAKOUT_NO_FRAMESKIP_V4 = "BreakoutNoFrameskip-v4"
