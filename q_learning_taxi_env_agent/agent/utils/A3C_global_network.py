@@ -3,6 +3,7 @@ import os
 import torch
 
 from .compute_device import ComputeDevice
+from .shared_rms_prop import SharedRMSprop
 from ..network import A3CNetwork
 from ...constans import A3CConstants
 from ...environment import Environment
@@ -18,7 +19,7 @@ class A3CGlobalNetwork(ExperienceHandler):
         self.device = ComputeDevice.get_device()
         self.network = A3CNetwork(self.env.get_action_space().n).to(device=self.device)
         self.network.share_memory()
-        self.optimizer = optim.RMSprop(self.network.parameters(), lr=self.learning_rate, alpha=self.decay_factor, eps=self.epsilon)
+        self.optimizer = SharedRMSprop(self.network.parameters(), lr=self.learning_rate, alpha=self.decay_factor, eps=self.epsilon)
 
     def load_progress(self):
         file_full_path = A3CConstants.PROGRESS_MEMORY_DIRECTORY + A3CConstants.PROGRESS_MEMORY_FILE_NAME

@@ -4,28 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2117307c-a555-48c0-8362-23c29dbf44f9" name="Changes" comment="Added A3C algorithm implementation in a multiprocessing env">
+    <list default="true" id="2117307c-a555-48c0-8362-23c29dbf44f9" name="Changes" comment="Minor improvements to the structure of the A3C Agent">
+      <change afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/utils/shared_rms_prop.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main10.py" beforeDir="false" afterPath="$PROJECT_DIR$/main10.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main11.py" beforeDir="false" afterPath="$PROJECT_DIR$/main11.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main9.py" beforeDir="false" afterPath="$PROJECT_DIR$/main9.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/A3C_agent.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/A3C_agent.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/constans/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/constans/constants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/player/life_reset_training_player.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/player/life_reset_training_player.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/player_videos/training_A3C_player_videos/player-episode-0.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/player_videos/training_A3C_player_videos/player-episode-0.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/player_videos/training_A3C_player_videos/player-episode-1000.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/player_videos/training_A3C_player_videos/player-episode-1000.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/player_videos/training_A3C_player_videos/player-episode-2000.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/player_videos/training_A3C_player_videos/player-episode-2000.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/player_videos/training_A3C_player_videos/player-episode-3000.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/player_videos/training_A3C_player_videos/player-episode-3000.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/player_videos/training_A3C_player_videos/player-episode-4000.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/player_videos/training_A3C_player_videos/player-episode-4000.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/player_videos/training_A3C_player_videos/player-episode-5000.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/player_videos/training_A3C_player_videos/player-episode-5000.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/player_videos/training_A3C_player_videos/player-episode-6000.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/player_videos/training_A3C_player_videos/player-episode-6000.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/player_videos/training_A3C_player_videos/player-episode-7000.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/player_videos/training_A3C_player_videos/player-episode-7000.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/player_videos/training_A3C_player_videos/player-episode-8000.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/player_videos/training_A3C_player_videos/player-episode-9000.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/utils/A3C_global_network.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/utils/A3C_global_network.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/utils/transition_converter.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/agent/utils/transition_converter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/hyper_parameters/A3C_hyper_parameters.py" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/hyper_parameters/A3C_hyper_parameters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/player_videos/training_A3C_player_videos/player-episode-8000.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/player_videos/training_A3C_player_videos/player-episode-8000.mp4" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/progress_memory/A3C_episode_number.json" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/progress_memory/A3C_episode_number.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/progress_memory/A3C_network_checkpoint.pth" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/progress_memory/A3C_network_checkpoint.pth" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/q_learning_taxi_env_agent/progress_memory/A3C_statistics_checkpoint.json" beforeDir="false" afterPath="$PROJECT_DIR$/q_learning_taxi_env_agent/progress_memory/A3C_statistics_checkpoint.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,30 +56,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.blackjack.executor": "Debug",
-    "Python.main (1).executor": "Run",
-    "Python.main.executor": "Debug",
-    "Python.main1.executor": "Run",
-    "Python.main10.executor": "Debug",
-    "Python.main11.executor": "Run",
-    "Python.main12.executor": "Run",
-    "Python.main2.executor": "Run",
-    "Python.main3.executor": "Run",
-    "Python.main4.executor": "Run",
-    "Python.main5.executor": "Run",
-    "Python.main6.executor": "Debug",
-    "Python.main9.executor": "Debug",
-    "Python.q_learning_taxi_env.executor": "Run",
-    "Python.scripts.executor": "Run",
-    "Python.test.executor": "Debug",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "E:/Documents/programming/aritificial intelligence/q-learning-thesis/q_learning_taxi_env_agent/progress_memory",
-    "settings.editor.selected.configurable": "preferences.keymap"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.blackjack.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.main (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.main1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main10.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.main11.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main12.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main4.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main5.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main6.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.main9.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.q_learning_taxi_env.executor&quot;: &quot;Run&quot;,
+    &quot;Python.scripts.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Documents/programming/aritificial intelligence/q-learning-thesis/q_learning_taxi_env_agent/progress_memory&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Documents\programming\aritificial intelligence\q-learning-thesis\q_learning_taxi_env_agent\progress_memory" />
@@ -355,7 +343,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742965667277</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Minor improvements to the structure of the A3C Agent">
+      <option name="closed" value="true" />
+      <created>1743100056129</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1743100056130</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -389,7 +385,8 @@
     <MESSAGE value="Implemented A3C training environment" />
     <MESSAGE value="Added unversioned files" />
     <MESSAGE value="Added A3C algorithm implementation in a multiprocessing env" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added A3C algorithm implementation in a multiprocessing env" />
+    <MESSAGE value="Minor improvements to the structure of the A3C Agent" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor improvements to the structure of the A3C Agent" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

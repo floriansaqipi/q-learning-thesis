@@ -25,5 +25,5 @@ class TransitionConverter:
             self.to_tensor(
                 obs_batch, actions_batch, rewards_batch, terminated_batch, next_obs_batch))
 
-        return obs_batch, actions_batch.unsqueeze(1), rewards_batch.unsqueeze(1), terminated_batch.unsqueeze(1), next_obs_batch
+        return obs_batch, actions_batch, rewards_batch, terminated_batch, next_obs_batch
 
